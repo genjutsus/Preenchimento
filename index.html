@@ -105,7 +105,7 @@
 
     <div class="container">
         <h1>Dados para Atendimento Inicial</h1>
-        <p class="info-box">Preencha os dados abaixo. Ao clicar em "Gerar Link", será criada uma mensagem para ser enviada aos <strong>policiais civis desta delegacia</strong>.</p>
+        <p class="info-box">Preencha os dados abaixo. Ao clicar em "Gerar Link", será criada uma mensagem para ser enviada aos <strong>policiais civis desta delegacia</strong>. Após clicar no link gerado e enviar a mensagem, basta você aguardar sua vez, pois um policial irá te chamar presencialmente no balcão.</p>
 
         <form id="whatsappForm" onsubmit="return false;">
             
@@ -273,7 +273,7 @@
             resultadoDiv.style.display = 'block';
             resultadoDiv.innerHTML = `
                 <p>Seu link está pronto!</p>
-                <p>Clique para abrir no WhatsApp:</p>
+                <p>Após abrir o link, basta clicar no botão de enviar a mensagem. Clique para abrir no WhatsApp:</p>
                 <a href="${url}" target="_blank">${url}</a>
             `;
         }
