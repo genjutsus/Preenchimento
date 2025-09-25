@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Link para WhatsApp</title>
+    <title>Dados para Atendimento Inicial</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -104,8 +104,8 @@
 <body>
 
     <div class="container">
-        <h1>Gerador de Link para WhatsApp</h1>
-        <p class="info-box">Preencha os dados abaixo. Ao clicar em "Gerar Link", será criada uma mensagem para ser enviada a um <strong>destinatário pré-definido</strong>.</p>
+        <h1>Dados para Atendimento Inicial</h1>
+        <p class="info-box">Preencha os dados abaixo. Ao clicar em "Gerar Link", será criada uma mensagem para ser enviada aos <strong>policiais civis desta delegacia</strong>.</p>
 
         <form id="whatsappForm" onsubmit="return false;">
             
@@ -117,7 +117,7 @@
             </div>
             <div class="form-group">
                 <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" id="dataNascimento">
+                <input type="text" id="dataNascimento">
             </div>
             <div class="form-group">
                 <label for="nomePai">Nome do Pai:</label>
@@ -163,7 +163,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="ocupacao">Ocupação Principal:</label>
+                <label for="ocupacao">Profissão:</label>
                 <input type="text" id="ocupacao">
             </div>
              <div class="form-group">
@@ -216,7 +216,7 @@
                 <input type="text" id="cep">
             </div>
             
-            <button onclick="gerarLink()">Gerar Link para WhatsApp</button>
+            <button onclick="gerarLink()">Gerar Link para enviar os dados por WhatsApp</button>
         </form>
 
         <div id="resultado"></div>
@@ -238,7 +238,7 @@
                 "Cidade em que nasceu": document.getElementById('cidadeNascimento').value,
                 "Estado Civil": document.getElementById('estadoCivil').value,
                 "Escolaridade": document.getElementById('escolaridade').value,
-                "Ocupação Principal": document.getElementById('ocupacao').value,
+                "Profissão": document.getElementById('ocupacao').value,
                 "Sexo": document.getElementById('sexo').value,
                 "Cor": document.getElementById('cor').value,
                 "CPF": document.getElementById('cpf').value,
